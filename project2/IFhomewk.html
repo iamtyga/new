@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>project2</title>
+</head>
+
+<body>
+    <input type="button" id="btnclick" value="Enter for results" onclick="test();" />
+
+
+</body>
+<script>
+    function test(bmi) {
+        var weight = prompt("what is your weight");
+        var height = prompt("what is your height");
+        val = bmiCalculator(65, 1.8);
+        bmiCalculator = Math.round((weight / (height * height)));
+        if (bmiCalculator < 18.5) {
+            alert("your " +weight+ "and " +height+ "is " +bmiCalculator+ ", so you are under weight");
+        } else {
+            if (bmiCalculator >= 18.5 && bmiCalculator <= 24.9) {
+                alert("your " +weight+ "and " +height+ "is " +bmiCalculator+ ", so you have normal weight");
+            } else {
+                if (bmiCalculator  > 24.9) {
+                    alert("your " +weight+ "and " +height+ "is " +bmiCalculator+ ", so you are over weight");
+                }
+            }
+        }
+
+
+    }
+
+
+
+
+</script>
+
+
+
+</html>
